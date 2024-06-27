@@ -40,6 +40,9 @@ python3 daraz_scraper.py
 ## Improvements:
 - Need to add explicit time sleep or scroll as Images weren't fully rendered in the page source.
 
+# Dataset Screenshot
+![Dataset Image](daraz_products_dataset.PNG)
+
 ## Resources:
 
 - Scrapy: https://scrapy.org/
