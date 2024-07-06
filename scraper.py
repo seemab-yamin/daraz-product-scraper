@@ -1,4 +1,5 @@
 import os
+import sys
 
 import scrapy
 from scrapy import Selector
@@ -142,7 +143,22 @@ class DarazSpider(scrapy.Spider):
 
 
 if __name__ == "__main__":
-    category_url = "https://www.daraz.pk/washers-dryers"
+    try:
+        # Validate if category URL from the first argument is a string type
+        if not isinstance(sys.argv[1], str):
+            raise TypeError("Category URL argument must be a string.")
+        category_url = sys.argv[1]
+        print(f"Category Url:\t{category_url}")
+    except (IndexError, TypeError) as e:
+        print(f"Error: {e}")
+        print(
+            "Please provide a valid category URL as an argument. "
+            "For example: python3 scraper.py https://www.daraz.pk/washers-dryers"
+        )
+
+        print("Exiting...")
+        exit()
+
     crawler = CrawlerProcess()
     crawler.crawl(DarazSpider, start_urls=[category_url])
     crawler.start()

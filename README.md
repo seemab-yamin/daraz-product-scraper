@@ -12,7 +12,7 @@ Daraz is a popular ecommerce platform in ASIA. This script scrapes product info 
 
 ## Needs:
 
-Python 3 (Linux/Mac)
+Python 3 (Linux/Mac/WSL)
 
 ## Setup:
 
@@ -27,7 +27,10 @@ playwright install --with-deps chromium
 
 Run:
 ```Bash
-python3 daraz_scraper.py
+python3 daraz_scraper.py {category_url}
+
+# Example
+python3 scraper.py https://www.daraz.pk/washers-dryers
 ```
 
 ## Pros: 
