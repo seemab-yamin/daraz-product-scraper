@@ -27,7 +27,7 @@ playwright install --with-deps chromium
 
 Run:
 ```Bash
-python3 daraz_scraper.py {category_url}
+python3 scraper.py {category_url}
 
 # Example
 python3 scraper.py https://www.daraz.pk/washers-dryers
@@ -43,8 +43,11 @@ python3 scraper.py https://www.daraz.pk/washers-dryers
 ## Improvements:
 - Need to add explicit time sleep or scroll as Images weren't fully rendered in the page source.
 
-# Dataset Screenshot
+# Dataset Screenshot:
 ![Dataset Image](daraz_products_dataset.PNG)
+
+<!-- # Video Demo:
+![Demo]() -->
 
 ## Resources:
 

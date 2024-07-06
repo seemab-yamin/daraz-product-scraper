@@ -1,3 +1,4 @@
+import datetime
 import os
 import sys
 
@@ -79,7 +80,12 @@ class DarazSpider(scrapy.Spider):
         page = response.meta["playwright_page"]
 
         while True:
+            # get next page element
             next_page = await page.query_selector("li[title='Next Page']")
+            pagination_url = page.url
+
+            # current pagination url
+            print(f"LAST URL:\t{pagination_url}")
 
             # fetch products
             products = await page.query_selector_all('div[data-spm="sku"] > div')
@@ -111,13 +117,21 @@ class DarazSpider(scrapy.Spider):
                     "current_price": current_price,
                     "original_price": original_price,
                     "is_free_delivery": is_free_delivery,
+                    "pagination_url": pagination_url,
                 }
 
             try:
-                last_url = page.url
-                print(f"Visiting Next Page. LAST URL:\t{last_url}")
+                print("Checking Next Page.")
                 if await next_page.get_attribute("aria-disabled") == "true":
                     print("Next Page Element Disabled. Quitting...")
+
+                    current_timestamp = datetime.datetime.now().timestamp()
+                    await page.screenshot(
+                        path=os.path.join(
+                            OUTPUT_DIR, f"screenshot_{current_timestamp}.png"
+                        ),
+                        full_page=True,
+                    )
                     # break on last page
                     break
 
