@@ -10,13 +10,13 @@ Daraz is a popular ecommerce platform in ASIA. This script scrapes product info 
 - Navigates to next page until reaches last page and handle pagination
 - Implemented Download Delay to avoid server overloading.
 
-## Needs:
+## OS Platform:
 
 Python 3 (Linux/Mac/WSL)
 
-## Setup:
+## Installing Dependencies:
 
-Open terminal and type:
+To install dependencies open terminal and type:
 
 ```Bash
 git clone https://github.com/seemab-yamin/daraz-product-scraper
@@ -30,7 +30,7 @@ Run:
 python3 scraper.py {category_url}
 
 # Example
-python3 scraper.py https://www.daraz.pk/washers-dryers
+python3 scraper.py https://www.daraz.pk/vented-dryers
 ```
 
 ## Pros: 
