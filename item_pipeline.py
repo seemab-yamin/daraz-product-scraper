@@ -34,10 +34,6 @@ class ProductPipeline:
             if not adapter.get("product_url").startswith("https:"):
                 adapter["product_url"] = "https:" + adapter["product_url"]
 
-        # construct brand from title text
-        if adapter.get("product_title"):
-            adapter["product_brand"] = adapter["product_title"].split(" ")[0]
-
         # clean prices and convert to dollar
         if adapter.get("current_price"):
             adapter["current_price"] = process_price(adapter["current_price"])
