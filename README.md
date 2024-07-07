@@ -47,9 +47,7 @@ python3 scraper.py https://www.daraz.pk/vented-dryers
 ![Dataset Image](daraz_products_dataset.PNG)
 
 # Video Demo:
-[![Demo Video](https://i9.ytimg.com/vi/qLcY0ZkxuN8/mqdefault.jpg?sqp=CIiOqLQG-oaymwEmCMACELQB8quKqQMa8AEB-AHWBIAC4AOKAgwIABABGCQgWyh_MA8=&rs=AOn4CLD44OHy-wXU4ujclurniHPB7YqxFA)](https://youtu.be/qLcY0ZkxuN8)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qLcY0ZkxuN8?si=_fIgdMT6HKptRBtD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Demo Video](https://i.ytimg.com/vi/qLcY0ZkxuN8/sddefault.jpg?sqp=-oaymwEmCIAFEOAD8quKqQMa8AEB-AHWBIAC4AOKAgwIABABGCQgWyh_MA8=&rs=AOn4CLAgXfCHzvKbSuHq33QxKO7L2Qdq2w)](https://youtu.be/qLcY0ZkxuN8)
 
 ## Resources:
 
