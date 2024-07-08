@@ -1,5 +1,5 @@
 # Daraz Product Scraper
-Daraz is a popular ecommerce platform in ASIA. This script scrapes product info (title, price, etc.) from Daraz by following category pages.
+Daraz product scraper is a powerful Python scraper, built with Scrapy and Playwright, conquers Daraz's dynamic content and anti-bot measures. It extracts product details (titles, prices, etc.) while respecting robots.txt and handles complex product structures. It even cleans and converts prices to USD!
 
 ## Goal:
 - Handle Dynamic Content rendering in a headless mode.
